@@ -1,5 +1,7 @@
 package com.packtpub.mastering.selenium.steps;
 
+import org.junit.Assert;
+
 import cucumber.annotation.en.Given;
 import cucumber.annotation.en.Then;
 import cucumber.annotation.en.When;
@@ -10,7 +12,8 @@ public class ConversionStepDefs {
 	@Given("^I want to convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
 	public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
 	    // Express the Regexp above with the code you wish you had
-	    throw new PendingException();
+		Assert.fail("It is failed");
+		throw new PendingException();
 	}
 
 	@When("^I input the value of Fahrenheit as (\\d+).(\\d+) in text field$")
