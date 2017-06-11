@@ -19,7 +19,7 @@ public class ConversionStepDefs {
 	
 	@Given("^I want to convert (\\d+).(\\d+) degree Fahrenheit to Celsius$")
 	public void I_want_to_convert_degree_Fahrenheit_to_Celsius(int arg1, int arg2) throws Throwable {
-		System.setProperty("webdriver.gecko.driver", "/Users/ellobo/Downloads/geckodriver");
+		System.setProperty("webdriver.gecko.driver", "/Users/ellobo/Downloads/geckodriver 2");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		googlePage = new Google(driver);
