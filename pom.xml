@@ -30,6 +30,7 @@
       <groupId>info.cukes</groupId>
       <artifactId>cucumber-java</artifactId>
       <version>1.0.14</version>
+      <scope>test</scope>
     </dependency>
       <dependency>
       <groupId>info.cukes</groupId>
