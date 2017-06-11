@@ -17,7 +17,7 @@ public class TemperatureConverterPage {
 	public void inputFahrenheit(double valueOfFahrenheit) {
 		String s = Double.toString(valueOfFahrenheit);
 		driver.findElement(By.xpath(".//*[@id='_Aif'/input")).click();
-		driver.findElement(By.xpath(".//*[@id='_Aif']/input")).sendKeys("98.3");
+		driver.findElement(By.xpath(".//*[@id='_Aif']/input")).sendKeys(s);
 		
 	}
 	
@@ -25,6 +25,10 @@ public class TemperatureConverterPage {
 		String valueOfCelsius = driver.findElement(By.xpath(".//*[@id='_Cif']/input")).getAttribute("value");
 		System.out.println(valueOfCelsius);
 		return valueOfCelsius;
+	}
+
+	public String expectedResult() {
+		return "37";
 	}
 	
 	
